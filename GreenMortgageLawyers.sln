@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LVR_API", "LVR_API\LVR_API.csproj", "{90B7FF24-1B96-45BF-AC2C-6EDDA8C5B966}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity", "Entity\Entity.csproj", "{11D198E6-8DFD-4FA2-BB13-1E6440EA04F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessServices", "BusinessServices\BusinessServices.csproj", "{053C0A96-77AA-4637-8EA9-7B04CFEFDDC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LvrUnitTest", "LvrUnitTest\LvrUnitTest.csproj", "{B2B380FD-E12C-43DC-B126-8E3068CB100D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{11D198E6-8DFD-4FA2-BB13-1E6440EA04F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11D198E6-8DFD-4FA2-BB13-1E6440EA04F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11D198E6-8DFD-4FA2-BB13-1E6440EA04F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{053C0A96-77AA-4637-8EA9-7B04CFEFDDC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{053C0A96-77AA-4637-8EA9-7B04CFEFDDC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{053C0A96-77AA-4637-8EA9-7B04CFEFDDC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{053C0A96-77AA-4637-8EA9-7B04CFEFDDC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2B380FD-E12C-43DC-B126-8E3068CB100D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2B380FD-E12C-43DC-B126-8E3068CB100D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2B380FD-E12C-43DC-B126-8E3068CB100D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2B380FD-E12C-43DC-B126-8E3068CB100D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

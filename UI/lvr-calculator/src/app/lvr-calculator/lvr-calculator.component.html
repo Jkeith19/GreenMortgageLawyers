@@ -1,0 +1,35 @@
+<div class="container">
+    <h1>Loan Valuation Ratio (LVR) Calculator</h1>
+    <form (ngSubmit)="onSubmit()">
+      <div class="input-group">
+        <label for="loanAmount">Loan Amount ($):</label>
+        <input
+          type="number"
+          id="loanAmount"
+          [(ngModel)]="loanAmount"
+          name="loanAmount"
+          required
+          placeholder="Enter Loan Amount"
+        />
+      </div>
+      <div class="input-group">
+        <label for="propertyValue">Property Value ($):</label>
+        <input
+          type="number"
+          id="propertyValue"
+          [(ngModel)]="propertyValue"
+          name="propertyValue"
+          required
+          placeholder="Enter Property Value"
+        />
+      </div>
+      <button type="submit">Calculate LVR</button>
+    </form>
+  
+    <p *ngIf="error" class="error">{{ error }}</p>
+  
+    <div *ngIf="lvr !== null && !error" class="result">
+      <h2>Result</h2>
+      <p>The Loan Valuation Ratio (LVR) is: {{ lvr }}%</p>
+    </div>
+  </div>
