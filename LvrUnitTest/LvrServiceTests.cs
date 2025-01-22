@@ -54,7 +54,13 @@ namespace LvrUnitTest
             var input = new InputLVR { PropertyValue = 500000, LoanAmount = 300000 };
             decimal lvr = (input.LoanAmount / input.PropertyValue) * 100;
 
-            var existingLvr = new LVR { LoanAmount = input.LoanAmount, PropertyValue = input.PropertyValue, LoanValuationRatio = lvr };
+            var existingLvr = new LVR 
+            { 
+                LoanAmount = input.LoanAmount,
+                PropertyValue = input.PropertyValue, 
+                LoanValuationRatio = lvr 
+            };
+
             _fakeDbContext.LVR.Add(existingLvr);
             await _fakeDbContext.SaveChangesAsync();
 
